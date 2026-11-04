@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head><style>
+@font-face {
+  font-family: "Optimistic";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/OptimisticAI_VF_Optimized.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Optimistic Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/OptimisticMono_W_TextRegular.woff2") format("woff2");
+}
+:where(html) {
+  font-family: "Optimistic", system-ui, sans-serif;
+}
+:where(code, pre, kbd, samp) {
+  font-family: "Optimistic Mono", ui-monospace, monospace;
+}
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jiji Clone - David Regis</title>
+<style>
+/* simple css - by david */
+body{
+margin:0;
+font-family: Arial, sans-serif;
+background:#f0f0f0;
+}
+.header{
+background:white;
+padding:10px;
+display:flex;
+align-items:center;
+gap:10px;
+border-bottom:1px solid #ddd;
+}
+.logo{
+color:#ff8a00;
+font-weight:bold;
+font-size:26px;
+}
+.search{
+flex:1;
+display:flex;
+}
+.search input{
+width:100%;
+height:40px;
+border:2px solid #ff8a00;
+padding-left:10px;
+}
+.search button{
+height:40px;
+background:#ff8a00;
+color:white;
+border:none;
+padding:0 15px;
+font-weight:bold;
+}
+.sell{
+background:#00b53f;
+color:white;
+border:none;
+padding:10px 15px;
+font-weight:bold;
+border-radius:4px;
+}
+.wrap{
+max-width:1200px;
+margin:15px auto;
+display:flex;
+gap:15px;
+padding:0 10px;
+}
+.side{
+width:230px;
+background:white;
+border-radius:5px;
+}
+.side h3{
+font-size:14px;
+padding:12px;
+border-bottom:1px solid #eee;
+margin:0;
+}
+.side p{
+font-size:13px;
+padding:10px 12px;
+margin:0;
+border-bottom:1px solid #f5f5f5;
+}
+.main{
+flex:1;
+}
+.top-banner{
+background:#ff8a00;
+color:white;
+padding:15px;
+border-radius:5px;
+}
+.products{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-top:15px;
+}
+.product{
+width:23%;
+background:white;
+border-radius:5px;
+padding:8px;
+border:1px solid #e5e5e5;
+}
+.product img{
+width:100%;
+height:140px;
+object-fit:cover;
+border-radius:5px;
+background:#eee;
+}
+.price{
+color:#ff8a00;
+font-weight:bold;
+margin-top:5px;
+}
+.name{
+font-size:13px;
+margin-top:4px;
+height:32px;
+overflow:hidden;
+}
+.location{
+font-size:11px;
+color:gray;
+margin-top:5px;
+}
+.btn{
+display:flex;
+gap:5px;
+margin-top:8px;
+}
+.btn a{
+flex:1;
+text-align:center;
+text-decoration:none;
+font-size:12px;
+padding:6px 0;
+border-radius:4px;
+font-weight:bold;
+}
+.chat{
+background:#eee;
+color:black;
+}
+.wa{
+background:#25d366;
+color:white;
+}
+.footer{
+background:white;
+text-align:center;
+padding:15px;
+font-size:12px;
+margin-top:20px;
+color:gray;
+}
+
+/* for phone */
+@media(max-width:800px){
+.wrap{flex-direction:column}
+.side{display:none}
+.product{width:48%}
+.header{flex-wrap:wrap}
+.search{order:3; width:100%}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<div class="logo">Jiji</div>
+<div class="search">
+<input type="text" placeholder="Search in Ibadan...">
+<button>Search</button>
+</div>
+<button class="sell">+ SELL</button>
+</div>
+
+<div class="wrap">
+<div class="side">
+<h3>Categories</h3>
+<p>🚗 Vehicles - 27k</p>
+<p>🏠 Property - 14k</p>
+<p>📱 Phones - 31k</p>
+<p>📺 Electronics - 22k</p>
+<p>👗 Fashion - 42k</p>
+<p>💄 Beauty - 12k</p>
+<p>🍼 Babies - 5k</p>
+</div>
+
+<div class="main">
+<div class="top-banner">
+<h2 style="margin:0">Find Anything in Ibadan</h2>
+<p style="margin:5px 0 0 0; font-size:13px">1,203 ads • Pay on delivery</p>
+</div>
+
+<div class="products">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400">
+<div class="price">₦ 650,000</div>
+<div class="name">iPhone 14 Pro Max 256GB - Tokunbo</div>
+<div class="location">Bodija, Ibadan • Used</div>
+<div class="btn">
+<a class="chat" href="#">Chat</a>
+<a class="wa" href="https://wa.me/2348086403238?text=Hi%20I%20want%20iPhone%2014">WhatsApp</a>
+</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?w=400">
+<div class="price">₦ 4,500,000</div>
+<div class="name">Toyota Camry 2012 - First Body</div>
+<div class="location">Challenge, Ibadan</div>
+<div class="btn">
+<a class="chat" href="#">Chat</a>
+<a class="wa" href="https://wa.me/2348086403238?text=Camry%202012">WhatsApp</a>
+</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400">
+<div class="price">₦ 18,000</div>
+<div class="name">Ankara Gown - Signature Fashion</div>
+<div class="location">Dugbe, Ibadan • New</div>
+<div class="btn">
+<a class="chat" href="#">Chat</a>
+<a class="wa" href="https://wa.me/2348086403238?text=Ankara%20Gown">WhatsApp</a>
+</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400">
+<div class="price">₦ 18,500</div>
+<div class="name">Men's Sneakers - Nike Air Max</div>
+<div class="location">Mokola, Ibadan</div>
+<div class="btn">
+<a class="chat" href="#">Chat</a>
+<a class="wa" href="https://wa.me/2348086403238?text=Sneakers">WhatsApp</a>
+</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b4b1?w=400">
+<div class="price">₦ 45,000</div>
+<div class="name">Human Hair Wig - 22 Inches</div>
+<div class="location">UI, Ibadan</div>
+<div class="btn">
+<a class="chat" href="#">Chat</a>
+<a class="wa" href="https://wa.me/2348086403238?text=Hair%20Wig">WhatsApp</a>
+</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400">
+<div class="price">₦ 220,000</div>
+<div class="name">HP EliteBook 840 - UK Used</div>
+<div class="location">Iwo Road, Ibadan</div>
+<div class="btn">
+<a class="chat" href="#">Chat</a>
+<a class="wa" href="https://wa.me/2348086403238?text=HP%20Laptop">WhatsApp</a>
+</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400">
+<div class="price">₦ 320,000</div>
+<div class="name">Sofa Set - 3 in 1 L Shape</div>
+<div class="location">Akobo, Ibadan</div>
+<div class="btn">
+<a class="chat" href="#">Chat</a>
+<a class="wa" href="https://wa.me/2348086403238?text=Sofa">WhatsApp</a>
+</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400">
+<div class="price">₦ 850,000/yr</div>
+<div class="name">3 Bedroom Flat - Bodija New Building</div>
+<div class="location">Bodija, Ibadan • New</div>
+<div class="btn">
+<a class="chat" href="#">Chat</a>
+<a class="wa" href="https://wa.me/2348086403238?text=Flat%20Bodija">WhatsApp</a>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="footer">
+© 2025 Built by David Regis - Ibadan
+</div>
+
+<script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script></body>
+</html>
